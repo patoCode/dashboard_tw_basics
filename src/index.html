@@ -514,7 +514,7 @@
         </ul>
       </div>
       <div class="p-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
           <!-- CARD 1 -->
           <div
             class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5"
@@ -616,9 +616,10 @@
             <div class="flex justify-between mb-6">
               <div>
                 <div class="text-2xl font-semibold mb-1">
-                  <span class="text-base font-normal text-gray-400">
-                    TEXT
-                  </span>
+                  <span class="text-base font-normal text-gray-400"
+                    >&dollar;</span
+                  >
+                  2.531,154
                 </div>
                 <div class="text-sm font-medium text-gray-400">
                   Active Orders
@@ -638,13 +639,67 @@
                 </ul>
               </div>
             </div>
-            <div class="flex items-center">
-              <div class="w-full bg-gray-100 rounded-full h-4">
-                <div class="h-full bg-blue-500 rounded-full w-[60%] p-1">
-                  <div class="w-2 h-2 rounded-full bg-white ml-auto"></div>
-                </div>
+            <a
+              href=""
+              class="text-blue-500 font-medium text-sm hover:text-blue-900"
+            >
+              View details...
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            class="bg-white border border-gray-100 shadow-md shadow-black/10 p-6"
+          >
+            <div class="flex justify-between mb-4 items-start">
+              <div class="font-medium">Manage orders</div>
+              <div class="dropdown">
+                <i class="ri-more-2-line"></i>
               </div>
-              <span class="text-sm font-bold ml-4 text-gray-400">60%</span>
+            </div>
+            <div class="flex items-center mb-4 order-tab">
+              <button
+                type="button"
+                class="bg-gray-50 text-sm font-medium text-gray-400 py-2 px-4 rounded-tl-md rounded-bl-md hover:text-gray-700 active"
+              >
+                Active
+              </button>
+              <button
+                type="button"
+                class="bg-gray-50 text-sm font-medium text-gray-400 py-2 px-4 hover:text-gray-700"
+              >
+                Completed
+              </button>
+              <button
+                type="button"
+                class="bg-gray-50 text-sm font-medium text-gray-400 py-2 px-4 rounded-tr-md rounded-br-md"
+              >
+                Cancelled
+              </button>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full min-w-[540px]">
+                <thead>
+                  <tr>
+                    <th
+                      class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 rounded-tl-md rounded-bl-md"
+                    >
+                      Service
+                    </th>
+                    <th
+                      class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 rounded-tl-md rounded-bl-md"
+                    >
+                      Service
+                    </th>
+                    <th
+                      class="text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 rounded-tl-md rounded-bl-md"
+                    >
+                      Service
+                    </th>
+                  </tr>
+                </thead>
+              </table>
             </div>
           </div>
         </div>

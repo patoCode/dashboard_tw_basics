@@ -4,3 +4,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.order-tab > .active{
+    @apply bg-blue-500 text-white hover:text-white;
+}
